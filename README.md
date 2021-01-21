@@ -3,6 +3,9 @@
 
 This project was generated with .NET 5 .
 
+## Install git
+Download and install [git](https://git-scm.com/downloads). We need git to work with the repository.
+
 ## Database Setup
 
 ###### DB setup
@@ -30,38 +33,48 @@ Download visual studio from here [Visual studio 2019](https://visualstudio.micro
   },`
 * Enter database server name in the place of `<server_name>`.
 Ther server name can be found on sql server management studio.
-- ![Server name](/images/servername.png)
+ ![Server name](BSChat/images/servername.png)
 
-###### Run solution project
-* Now double click and run the `BSChat.sln` file with visual studio .
+### How to run the project with visual studio
+* To start the project double click and run the `BSChat.sln` file with visual studio .
 * Run the project with IISExpress by clicking on the IISExpress button on the toolbar of visual studio.
+ ![iisexpress](BSChat/images/iis.png)
+* Now check the [BSChatFE](https://github.com/EkhlasMridha/BSChatFE) repository for next instructions
 
 # BSChatFE (Client side)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.1.
 
-## Development server
+## Installing angular
+* We need npm package manager to setup everything. Visit [Nodejs](https://nodejs.org/en/) , download and install nodejs which will install npm package manager with it.
+* Now install angular cli by running `npm install -g @angular/cli` command on terminal or command prompt on your machine. Visit [Angular CLI](https://cli.angular.io/) for detail.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Install git
+Download and install [git](https://git-scm.com/downloads). We need git to work with the repository.
 
-## Code scaffolding
+## Project setup
+###### Download tools
+I prefer Visual studio code, but we can use any dev friendly text editor. 
+* Download and install [Visual studio code](https://visualstudio.microsoft.com/downloads/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+###### Cloning the project on local machine
+* Open command prompt or terminal on a directory.
+* Run command `git clone https://github.com/EkhlasMridha/BSChatFE.git` on the terminal to clone the project on that directory.
+
+###### Installing packages
+* Open the BSChatFE project with VS code.
+* Click on terminal on the top toolbar
+* A terminal will open on the bottom side of VS code. Run command `npm install` on terminal to install the packages. (This may take some time).
+
+## Run the project on Development server
+
+*After the package has been installed run `npm start` or `ng serve` on the terminal to run the project on a dev server. Navigate to [http://localhost:4200/](http://localhost:4200/) on your browser.
+* It needs to run both BSChatBE and BSChatFE project at the same time to make the project functional.
 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
 ## Further help
 
-* To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-* It needs to run both BSChatBE and BSChatFE project at the same time to make the project functional.
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
