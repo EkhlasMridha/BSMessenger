@@ -1,0 +1,50 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+BSChatFE/dist
+BSChatFE/tmp
+BSChatFE/out-tsc
+# Only exists if Bazel was run
+BSChatFE/bazel-out
+
+# dependencies
+BSChatFE/node_modules
+
+# profiling files
+chrome-profiler-events*.json
+speed-measure-plugin*.json
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+BSChatFE/.vscode/*
+!BSChatFE/.vscode/settings.json
+!BSChatFE/.vscode/tasks.json
+!BSChatFE/.vscode/launch.json
+!BSChatFE/.vscode/extensions.json
+BSChatFE/.history/*
+
+# misc
+BSChatFE/.sass-cache
+BSChatFE/connect.lock
+BSChatFE/coverage
+BSChatFE/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+BSChatFE/typings
+
+# System Files
+.DS_Store
+Thumbs.db
+
+bin
+obj
+.vs/*
